@@ -6,3 +6,81 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: black;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho .logo {
+    border-radius: 8%;
+    margin: 1%; 
+}
+
+.cabecalho .name {
+    display: flex;
+    width: 300px;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: start  ;
+    height: 115vh;
+}
+
+.inicio img {
+    display: flex;
+}
+
+
+.inicio p {
+    color: white;
+    font-size: 5rem; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.discografia {
+    display: flex;
+    flex-direction: column; /* Alinhamento vertical */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar verticalmente */
+    gap: 40px; /* Espaço entre os álbuns */
+}
+
+.album {
+    position: relative;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.album p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; /* Espaço entre o título e a imagem */
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.album:hover {
+    transform: scale(1.1);
+}
+
+.album:hover img {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+

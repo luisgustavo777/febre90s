@@ -48,6 +48,3 @@ novaMensagemBtn.addEventListener('click', function() {
     
     formulario.reset();
 });
-
-
-

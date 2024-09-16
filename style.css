@@ -171,12 +171,49 @@ body {
     color: white;
     font-family: Bebas Neue;
     font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo para destacar o texto */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
 }
 
 .video-item:hover video {
-    transform: scale(1.1); /* Reduzido o scale para manter o texto visível */
+    transform: scale(1.1);
+}
+
+.tour-dates {
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.tour-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tour-item img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+}
+
+.tour-item h2 {
+    font-family: Bebas Neue;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.maps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.maps iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 

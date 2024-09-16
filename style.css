@@ -15,11 +15,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(235,77,71);
+    background: linear-gradient(90deg, rgba(235,77,71,1) 0%, rgba(249,230,34,1) 100%); 
 }
 
 .cabecalho .logo {
     border-radius: 8%;
-    margin: 1%; 
+    margin: 5%; 
+    margin-top: 2.5%;
 }
 
 .cabecalho .name {
@@ -139,7 +142,6 @@ body {
     align-items: center;
     gap: 20px;
     padding: 40px;
-    background-color: black;
 }
 
 .video-item {
@@ -149,7 +151,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    padding-bottom: 50px; /* Ajuste para o título não ser sobreposto */
+    padding-bottom: 50px; 
 }
 
 .video-item:hover {
@@ -237,13 +239,13 @@ body {
 }
 
 .contato-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #01c1ee;
 }
 
 .contato-silhueta {
     font-family: Arial, sans-serif;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: #fdc15f;
     margin-top: 10px;
     display: block;
     transition: opacity 0.3s ease;
@@ -256,7 +258,7 @@ body {
 .contato-formulario {
     max-width: 500px;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #fe5f42;
     padding: 20px;
     border-radius: 10px;
     opacity: 0;
@@ -273,7 +275,7 @@ body {
 
 .contato-formulario form label {
     display: block;
-    font-family: Arial, sans-serif;
+    font-family: Bebas Neue;
     font-size: 1.2rem;
     color: white;
     margin-bottom: 10px;
@@ -350,7 +352,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #fad703;
     color: white;
     padding: 20px;
     text-align: center;

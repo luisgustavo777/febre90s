@@ -28,49 +28,60 @@ body {
 }
 
 .inicio {
+    position: relative; 
     display: flex;
     justify-content: center;
-    align-items: start  ;
+    align-items: center;
     height: 115vh;
 }
 
 .inicio img {
-    display: flex;
+    height: 108%;
+    filter: blur(1px);
+    object-fit: cover;
+    width: 100%;
 }
 
-
-.inicio p {
+.inicio h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     color: white;
-    font-size: 5rem; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+    font-size: 6rem;
+    font-family: Bebas Neue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-align: center;
+    transform: translate(-50%, 0) scale(0.5);
 }
 
 .discografia {
+    margin: 20%;
     display: flex;
-    flex-direction: column; /* Alinhamento vertical */
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Para centralizar verticalmente */
-    gap: 40px; /* Espaço entre os álbuns */
+    height: 20vh; 
+    gap: 40px; 
+}
+
+.discografia h1 {
+    font-family: Bebas Neue;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; 
 }
 
 .album {
     position: relative;
-    width: 150px;
+    width: 100%;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
-.album p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px; /* Espaço entre o título e a imagem */
-}
-
 .album img {
-    width: 100%;
+    width: 105%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease, transform 0.3s ease;

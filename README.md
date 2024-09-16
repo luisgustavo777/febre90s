@@ -1,4 +1,4 @@
-Important Behavior: Active audio and video permissions on browser, something like that:
+Important Behavior: Make sure audio and video permissions on browser are activated, something like that:
 ![Captura de tela 2024-09-16 024946](https://github.com/user-attachments/assets/7589b2c7-a85e-4e0e-b5c6-b54503ff7218)
 
 Apresentation Screen

@@ -35,14 +35,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 115vh;
+    height: 100vh;
+    background-image: url('images/imagem-grande.jpeg'); 
+    background-size: cover;
+    background-position: center;
 }
 
 .inicio img {
-    height: 108%;
     filter: blur(1px);
     object-fit: cover;
-    width: 100%;
+    max-height: 108%;
+    max-width: 100%;
 }
 
 .inicio h1 {
@@ -50,7 +53,7 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     color: white;
-    font-size: 6rem;
+    font-size: 7vw;
     font-family: Bebas Neue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     text-align: center;
@@ -113,6 +116,11 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.biografia-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .biografia-item img {
@@ -267,6 +275,15 @@ body {
     pointer-events: none; 
 }
 
+.contato-button h2 {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contato-button:hover h2 {
+    color: #e3a500;
+}
+
 .contato:hover .contato-formulario {
     opacity: 1;
     transform: translateY(0);
@@ -381,4 +398,107 @@ body {
 
 .social-icon:hover img {
     opacity: 0.7;
+}
+
+.menu-navegacao ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 27px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+}
+
+.imagem-menor {
+    display: none;
+}
+
+.imagem-grande {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+}
+
+@media screen and (max-width: 768px) {
+    .video-item video {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map-container iframe {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .discografia {
+        flex-direction: column; 
+        margin: 10%;
+        height: auto;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .biografia {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagem-grande {
+        display: none;
+    }
+
+    .imagem-menor {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(1px);
+    }
+}
+
+@media (max-width: 768px) {
+    .inicio {
+        background-image: url('images/imagem-menor.jpg');
+    }
+}
+
+@media (max-width: 768px) {
+    .inicio h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contato-formulario {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto; 
+    }
+
+    .contato:hover .contato-formulario {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        height: 10vh;
+    }
+
+    .contato-silhueta {
+        display: none;
+    }
 }

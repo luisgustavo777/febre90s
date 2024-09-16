@@ -13,3 +13,16 @@ albums.forEach(album => {
         audioPlayer.currentTime = 0;
     });
 });
+
+const videoItems = document.querySelectorAll('.video-item video');
+
+videoItems.forEach(video => {
+    video.addEventListener('mouseenter', () => {
+        video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});

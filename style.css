@@ -132,3 +132,51 @@ body {
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: black;
+}
+
+.video-item {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    padding-bottom: 50px; /* Ajuste para o título não ser sobreposto */
+}
+
+.video-item:hover {
+    transform: scale(1.1);
+}
+
+.video-item video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.video-texto {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin: 1%;
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo para destacar o texto */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.video-item:hover video {
+    transform: scale(1.1); /* Reduzido o scale para manter o texto visível */
+}
+

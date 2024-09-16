@@ -217,3 +217,134 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.contato {
+    position: relative;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.contato-button {
+    cursor: pointer;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.contato-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contato-silhueta {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.contato:hover .contato-silhueta {
+    opacity: 0;
+}
+
+.contato-formulario {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    pointer-events: none; 
+}
+
+.contato:hover .contato-formulario {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.contato-formulario form label {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contato-formulario form input,
+.contato-formulario form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contato-formulario form button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-family: Bebas Neue;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contato-formulario form button:hover {
+    background-color: #ddd;
+}
+
+#mensagemEnviada {
+    color: lightgreen;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: Bebas Neue;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#novaMensagemBtn {
+    background-color: white;
+    color: black;
+    font-family: Bebas Neue;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#novaMensagemBtn:hover {
+    background-color: #ddd;
+}
+
+#formulario {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#formulario.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#mensagemEnviada.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

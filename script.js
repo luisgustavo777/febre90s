@@ -26,3 +26,28 @@ videoItems.forEach(video => {
         video.currentTime = 0;
     });
 });
+
+const formulario = document.getElementById('formularioContato');
+const mensagemEnviada = document.getElementById('mensagemEnviada');
+const novaMensagemBtn = document.getElementById('novaMensagemBtn');
+
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    formulario.style.display = 'none';
+    mensagemEnviada.style.display = 'block';
+    formulario.classList.add('hidden');
+    mensagemEnviada.classList.add('visible');
+});
+
+novaMensagemBtn.addEventListener('click', function() {
+    mensagemEnviada.style.display = 'none';
+    formulario.style.display = 'block';
+    mensagemEnviada.classList.remove('visible');
+    formulario.classList.remove('hidden');
+    
+    formulario.reset();
+});
+
+
+

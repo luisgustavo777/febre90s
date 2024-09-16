@@ -132,10 +132,30 @@
             </div>
         </div>
     </section>
+
+    <section class="contato">
+        <div class="contato-button">
+            <h2>Entre em contato</h2>
+            <div class="contato-silhueta">
+                <p>Passe o mouse aqui</p>
+            </div>
+        </div>
+        <div class="contato-formulario">
+            <form id="formularioContato">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
     
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
     
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="5" required></textarea>
     
-    
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensagemEnviada" style="display: none;">Mensagem enviada com sucesso! 
+                <button id="novaMensagemBtn">Enviar outra mensagem</button></p>
+
     <audio id="player" preload="auto"></audio>
     <script src="script.js"></script>
 </body>

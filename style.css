@@ -95,3 +95,40 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+.biografia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: black;
+}
+
+.biografia-item {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.biografia-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.biografia-texto h2 {
+    font-family: Bebas Neue;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.biografia-texto p {
+    color: #ddd;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}

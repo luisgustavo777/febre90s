@@ -13,5 +13,3 @@ albums.forEach(album => {
         audioPlayer.currentTime = 0;
     });
 });
-
-

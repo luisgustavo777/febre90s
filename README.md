@@ -2,7 +2,7 @@ Important Behavior: Make sure audio and video permissions on browser are activat
 ![Captura de tela 2024-09-16 024946](https://github.com/user-attachments/assets/7589b2c7-a85e-4e0e-b5c6-b54503ff7218)
 
 Apresentation Screen
-![Captura de tela 2024-09-16 051334](https://github.com/user-attachments/assets/a4a373a6-3b36-4c76-9751-6f97b72a85c5)
+![image](https://github.com/user-attachments/assets/bd31aa61-4293-42cd-acb7-ebd49175b48e)
 
 Popular Songs
 ![Captura de tela 2024-09-16 051339](https://github.com/user-attachments/assets/dc174b55-0c23-4ee0-a952-a4e2e5085ace)

@@ -17,3 +17,5 @@ Next shows
 
 Contact section
 ![Captura de tela 2024-09-16 051412](https://github.com/user-attachments/assets/9020dc89-4693-4a6f-8ebb-d13cd5bfbafe)
+
+Disclaimer: This web page was made on Mozilla Firefox browser, but testing in thinner screens, looks ok too.
